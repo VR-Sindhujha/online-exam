@@ -22,10 +22,13 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image') {
-            steps {
-                bat 'docker build -t sindhujha06/online-exam:v1 .'
-            }
-        }
+        
+stage('Build Docker Image') {
+    steps {
+        bat '"C:\\Users\\ADMIN\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" --version'
+        bat '"C:\\Users\\ADMIN\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t sindhujha06/online-exam:v1 .'
+    }
+}
+
     }
 }
